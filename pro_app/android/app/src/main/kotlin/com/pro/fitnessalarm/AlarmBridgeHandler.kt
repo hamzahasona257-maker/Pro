@@ -62,7 +62,11 @@ class AlarmBridgeHandler(private val context: Context) {
         val stopIntent = Intent(context, AlarmPlaybackService::class.java).apply {
             action = AlarmPlaybackService.ACTION_STOP_PLAYBACK
         }
-        context.startService(stopIntent)
+        runCatching {
+            context.startService(stopIntent)
+        }.onFailure {
+            context.stopService(Intent(context, AlarmPlaybackService::class.java))
+        }
         return true
     }
 }

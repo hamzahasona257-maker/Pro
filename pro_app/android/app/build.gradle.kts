@@ -1,6 +1,13 @@
 import java.io.FileInputStream
 import java.util.Properties
 
+plugins {
+    id("com.android.application")
+    id("kotlin-android")
+    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
+    id("dev.flutter.flutter-gradle-plugin")
+}
+
 val keystoreProperties = Properties()
 val keystorePropertiesFile = rootProject.file("key.properties")
 if (keystorePropertiesFile.exists()) {
@@ -10,6 +17,16 @@ if (keystorePropertiesFile.exists()) {
 android {
     namespace = "com.pro.fitnessalarm"
     compileSdk = 35
+    ndkVersion = flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_17.toString()
+    }
 
     defaultConfig {
         applicationId = "com.pro.fitnessalarm"
@@ -44,6 +61,10 @@ android {
             }
         }
     }
+}
+
+flutter {
+    source = "../.."
 }
 
 dependencies {
