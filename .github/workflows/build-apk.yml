@@ -28,9 +28,24 @@ jobs:
           channel: stable
           cache: true
 
-      - name: Install dependencies
+      - name: Ensure Android Gradle Wrapper
         working-directory: pro_app
-        run: flutter pub get
+        run: |
+          if [ ! -f android/gradlew ]; then
+            flutter create --platforms=android --org com.pro /tmp/pro_android_tpl
+            cp /tmp/pro_android_tpl/android/gradlew android/gradlew
+            cp /tmp/pro_android_tpl/android/gradlew.bat android/gradlew.bat
+            mkdir -p android/gradle/wrapper
+            cp -r /tmp/pro_android_tpl/android/gradle/wrapper/* android/gradle/wrapper/
+            chmod +x android/gradlew
+            rm -rf /tmp/pro_android_tpl
+          fi
+
+      - name: Install dependencies & generate localizations
+        working-directory: pro_app
+        run: |
+          flutter pub get
+          flutter gen-l10n
 
       - name: Build APK
         working-directory: pro_app

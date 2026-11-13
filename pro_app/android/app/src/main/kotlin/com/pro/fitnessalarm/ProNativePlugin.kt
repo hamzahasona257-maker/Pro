@@ -174,6 +174,7 @@ class ProNativePlugin :
                     type = "application/json"
                     putExtra(Intent.EXTRA_TITLE, fileName)
                 }
+                @Suppress("DEPRECATION")
                 activity.startActivityForResult(intent, REQ_EXPORT_BACKUP)
             }
             "importBackupDocument" -> {
@@ -189,6 +190,7 @@ class ProNativePlugin :
                     type = "*/*"
                     putExtra(Intent.EXTRA_MIME_TYPES, arrayOf("application/json", "text/plain"))
                 }
+                @Suppress("DEPRECATION")
                 activity.startActivityForResult(intent, REQ_IMPORT_BACKUP)
             }
             else -> result.notImplemented()
