@@ -1,0 +1,358 @@
+{
+  "@@locale": "en",
+  "appName": "PRO",
+  "appTagline": "Smart Fitness Alarm",
+  "splashInitializing": "Preparing local database and offline motion engine...",
+
+  "onboardingSlide1Title": "Wake Up With Movement",
+  "onboardingSlide1Body": "Alarms stay active until you complete your chosen physical exercise in front of the camera.",
+  "onboardingSlide2Title": "100% Offline Pose Verification",
+  "onboardingSlide2Body": "MediaPipe Pose Landmarker tracks 33 skeletal keypoints locally on your device with no cloud uploads.",
+  "onboardingSlide3Title": "Built for Discipline",
+  "onboardingSlide3Body": "Create custom schedules, choose your challenge, and track verified wake-up workouts.",
+  "onboardingSkip": "Skip",
+  "onboardingNext": "Next",
+  "onboardingGetStarted": "Get Started",
+
+  "navDashboard": "Dashboard",
+  "navAlarms": "Alarms",
+  "navExercises": "Exercises",
+  "navSettings": "Settings",
+
+  "dashboardVerifiedPerformance": "Verified Performance",
+  "dashboardVerifiedNote": "Metrics update strictly from completed offline MediaPipe exercise dismissals.",
+  "dashboardViewHistory": "History",
+  "dashboardQuickActions": "Quick Actions",
+  "dashboardScheduledAlarms": "Scheduled Alarms",
+  "dashboardViewAll": "View All",
+  "dashboardNoActiveAlarm": "No Active Smart Alarm",
+  "dashboardNoActiveAlarmDesc": "Schedule an alarm and bind an offline MediaPipe exercise challenge required to dismiss it.",
+  "dashboardCreateSmartAlarm": "Create Smart Alarm",
+  "dashboardNoAlarmsPreview": "No alarms saved in local database yet. Tap to add one.",
+  "dashboardNextAlarm": "Next Alarm",
+  "dashboardDismissChallenge": "Dismiss Challenge: {target} {unit} {exercise}",
+  "@dashboardDismissChallenge": {
+    "placeholders": {
+      "target": { "type": "int" },
+      "unit": { "type": "String" },
+      "exercise": { "type": "String" }
+    }
+  },
+  "statStreak": "Streak",
+  "statStreakValue": "{days}d",
+  "@statStreakValue": {
+    "placeholders": { "days": { "type": "int" } }
+  },
+  "statWorkouts": "Workouts",
+  "statTotalReps": "Total Reps",
+  "quickAddAlarm": "Add Alarm",
+  "quickAddAlarmSub": "Time & challenge",
+  "quickAllAlarms": "All Alarms",
+  "quickAllAlarmsSub": "Manage schedules",
+  "quickExercises": "Exercises",
+  "quickExercisesSub": "5 MediaPipe drills",
+  "quickSettings": "Settings",
+  "quickSettingsSub": "Language & AI engine",
+
+  "alarmsTitle": "Alarms",
+  "alarmsActiveSummary": "{active} active · {total} total",
+  "@alarmsActiveSummary": {
+    "placeholders": {
+      "active": { "type": "int" },
+      "total": { "type": "int" }
+    }
+  },
+  "alarmsEmptyTitle": "No Alarms Configured",
+  "alarmsEmptyDesc": "Create a smart alarm and choose the physical exercise required before it can be dismissed.",
+  "alarmsCreateFirst": "Create First Alarm",
+  "alarmsAddButton": "Add Alarm",
+  "alarmsDeleteDialogTitle": "Delete Alarm?",
+  "alarmsDeleteDialogBody": "Remove \"{label}\" from local storage?",
+  "@alarmsDeleteDialogBody": {
+    "placeholders": { "label": { "type": "String" } }
+  },
+  "alarmsDeletedToast": "Deleted \"{label}\"",
+  "@alarmsDeletedToast": {
+    "placeholders": { "label": { "type": "String" } }
+  },
+
+  "alarmFormNewTitle": "New Smart Alarm",
+  "alarmFormEditTitle": "Edit Smart Alarm",
+  "alarmFormSubtitle": "Saved locally and paired with an offline exercise challenge",
+  "alarmTimeLabel": "Alarm Time",
+  "alarmTimeTapToChange": "Tap to change",
+  "alarmLabelTitle": "Label",
+  "alarmLabelPlaceholder": "e.g. Morning Strength Wake-Up",
+  "alarmDefaultLabel": "Wake Up Workout",
+  "alarmRepeatTitle": "Repeat Schedule",
+  "alarmRepeatWeekdaysAction": "Weekdays",
+  "alarmRepeatClearAction": "Clear",
+  "alarmExerciseTitle": "Dismissal Exercise",
+  "alarmExerciseChange": "Change",
+  "alarmRequiredTarget": "Required Target",
+  "alarmBehaviorTitle": "Alarm Behavior",
+  "alarmVibrationTitle": "Vibration",
+  "alarmVibrationSub": "Haptic pulse while alarm is active",
+  "alarmSnoozeTitle": "Allow One-Time Snooze",
+  "alarmSnoozeSub": "Recommended OFF for strict wake-up discipline",
+  "alarmSaveButton": "Save Smart Alarm",
+  "alarmUpdateButton": "Update Smart Alarm",
+  "alarmSavedToast": "Saved \"{label}\"",
+  "@alarmSavedToast": {
+    "placeholders": { "label": { "type": "String" } }
+  },
+  "alarmUpdatedToast": "Updated \"{label}\"",
+  "@alarmUpdatedToast": {
+    "placeholders": { "label": { "type": "String" } }
+  },
+
+  "periodAm": "AM",
+  "periodPm": "PM",
+  "repeatOnce": "Once",
+  "repeatEveryDay": "Every day",
+  "repeatWeekdays": "Weekdays",
+  "repeatWeekends": "Weekends",
+  "countdownLessThanMinute": "Less than 1m",
+  "countdownDaysHours": "in {days}d {hours}h",
+  "@countdownDaysHours": {
+    "placeholders": {
+      "days": { "type": "int" },
+      "hours": { "type": "int" }
+    }
+  },
+  "countdownHoursMinutes": "in {hours}h {minutes}m",
+  "@countdownHoursMinutes": {
+    "placeholders": {
+      "hours": { "type": "int" },
+      "minutes": { "type": "int" }
+    }
+  },
+  "countdownMinutes": "in {minutes}m",
+  "@countdownMinutes": {
+    "placeholders": { "minutes": { "type": "int" } }
+  },
+
+  "dayMonShort": "Mon",
+  "dayTueShort": "Tue",
+  "dayWedShort": "Wed",
+  "dayThuShort": "Thu",
+  "dayFriShort": "Fri",
+  "daySatShort": "Sat",
+  "daySunShort": "Sun",
+  "dayMonLetter": "M",
+  "dayTueLetter": "T",
+  "dayWedLetter": "W",
+  "dayThuLetter": "T",
+  "dayFriLetter": "F",
+  "daySatLetter": "S",
+  "daySunLetter": "S",
+
+  "exercisesTitle": "Exercise Catalog",
+  "exercisesChooseChallenge": "Choose Challenge",
+  "exercisesSubtitle": "Offline MediaPipe Pose Landmarker 33-point skeletal verification",
+  "exercisesOfflineNotice": "Offline AI Engine: MediaPipe Pose Landmarker (33-point skeletal tracking). Live camera verification activates in Phase 2.",
+  "exercisesDefaultBadge": "Default",
+  "exercisesLandmarksLabel": "Pose Landmarks",
+  "exercisesMetricLabel": "Metric",
+  "exercisesDefaultTargetLabel": "{target} {unit} default",
+  "@exercisesDefaultTargetLabel": {
+    "placeholders": {
+      "target": { "type": "int" },
+      "unit": { "type": "String" }
+    }
+  },
+  "exercisesSetDefaultBtn": "Set as Default Exercise",
+  "exercisesUseBtn": "Use {exercise}",
+  "@exercisesUseBtn": {
+    "placeholders": { "exercise": { "type": "String" } }
+  },
+  "exercisesDefaultUpdatedToast": "Default exercise set to {exercise}",
+  "@exercisesDefaultUpdatedToast": {
+    "placeholders": { "exercise": { "type": "String" } }
+  },
+  "exercisesInstructionsTitle": "Form Instructions",
+
+  "unitReps": "reps",
+  "unitSec": "sec",
+  "difficultyLight": "Light",
+  "difficultyModerate": "Moderate",
+  "difficultyHard": "Hard",
+
+  "exSquatsName": "Bodyweight Squats",
+  "exSquatsSubtitle": "Lower-body strength & hip mobility",
+  "exSquatsDesc": "Stand facing the camera with full body visible. Lower hips until thighs are parallel to the floor, then drive back to full extension.",
+  "exSquatsMuscles": "Quads · Glutes · Core",
+  "exSquatsLandmarks": "Hip (23, 24) · Knee (25, 26) · Ankle (27, 28)",
+  "exSquatsMetric": "Knee flexion angle < 95° -> extension > 165°",
+  "exSquatsInstructions": "1. Place your device upright at waist height.\n2. Step back until head, hips, and ankles are in frame.\n3. Lower steadily until thighs are parallel, then stand tall.",
+
+  "exPushUpsName": "Push-Ups",
+  "exPushUpsSubtitle": "Upper-body press & core stability",
+  "exPushUpsDesc": "Position the device at floor angle in side profile. Lower chest toward the ground while keeping spine aligned, then press to lockout.",
+  "exPushUpsMuscles": "Chest · Triceps · Shoulders",
+  "exPushUpsLandmarks": "Shoulder (11, 12) · Elbow (13, 14) · Wrist (15, 16) · Hip (23, 24)",
+  "exPushUpsMetric": "Elbow angle < 90° with torso linearity check",
+  "exPushUpsInstructions": "1. Prop the device low on the floor in side view.\n2. Keep shoulders, hips, and ankles aligned.\n3. Lower until elbows bend past 90°, then press cleanly to full lockout.",
+
+  "exJumpingJacksName": "Jumping Jacks",
+  "exJumpingJacksSubtitle": "Rapid heart-rate & alertness booster",
+  "exJumpingJacksDesc": "Keep full body centered in frame. Jump feet outward while raising arms overhead, then return to starting stance.",
+  "exJumpingJacksMuscles": "Full Body · Calves · Shoulders",
+  "exJumpingJacksLandmarks": "Wrist (15, 16) · Shoulder (11, 12) · Ankle (27, 28)",
+  "exJumpingJacksMetric": "Wrist elevation above nose + ankle spread delta",
+  "exJumpingJacksInstructions": "1. Stand centered with overhead arm clearance.\n2. Jump feet wide while bringing wrists above head level.\n3. Return feet together and arms to sides for each rep.",
+
+  "exLungesName": "Alternating Lunges",
+  "exLungesSubtitle": "Single-leg balance & glute activation",
+  "exLungesDesc": "Step forward with one leg and lower until both knees approach 90 degrees, then push back to standing.",
+  "exLungesMuscles": "Glutes · Quads · Hamstrings",
+  "exLungesLandmarks": "Hip (23, 24) · Knee (25, 26) · Ankle (27, 28)",
+  "exLungesMetric": "Lead & trail knee flexion < 100°",
+  "exLungesInstructions": "1. Face the camera at a slight 45° angle.\n2. Step forward and lower both knees toward 90°.\n3. Drive back to upright stance and alternate legs.",
+
+  "exPlankName": "Forearm Plank Hold",
+  "exPlankSubtitle": "Isometric core stabilization",
+  "exPlankDesc": "Hold a rigid plank line in side view. MediaPipe tracks shoulder-hip-ankle alignment continuously.",
+  "exPlankMuscles": "Core · Shoulders · Lower Back",
+  "exPlankLandmarks": "Shoulder (11, 12) · Hip (23, 24) · Ankle (27, 28)",
+  "exPlankMetric": "Shoulder-hip-ankle angle within 165°–195°",
+  "exPlankInstructions": "1. Set the device on the floor in side profile.\n2. Support on forearms and toes with straight torso alignment.\n3. Hold steady until the required seconds complete.",
+
+  "cameraScreenTitle": "Exercise Verification",
+  "cameraAlignBodyPrompt": "Position your full body inside the camera frame.",
+  "cameraRepProgress": "{completed} / {target} {unit}",
+  "@cameraRepProgress": {
+    "placeholders": {
+      "completed": { "type": "int" },
+      "target": { "type": "int" },
+      "unit": { "type": "String" }
+    }
+  },
+  "cameraFormFeedbackGood": "Good alignment — keep going",
+  "cameraFormFeedbackAdjust": "Keep full body visible in frame",
+  "workoutCompleteTitle": "Alarm Dismissed",
+  "workoutCompleteSubtitle": "Challenge verified and saved to your activity history.",
+  "workoutDismissAlarmBtn": "Finish",
+  "workoutDurationLabel": "Duration",
+  "workoutAccuracyLabel": "Verification",
+
+  "historyTitle": "Activity History & Statistics",
+  "historyEmptyTitle": "No Workout Sessions Yet",
+  "historyEmptyDesc": "Completed exercise dismissals will appear here once Phase 2 live camera verification records your first session.",
+  "historySessionsLabel": "Completed Sessions",
+  "historyDeleteTitle": "Delete Workout Record?",
+  "historyDeleteBody": "Remove this completed session from your local workout history?",
+  "historyDeletedToast": "Workout record deleted",
+  "historyClearAllButton": "Clear History",
+  "historyClearDialogTitle": "Clear Workout History?",
+  "historyClearDialogBody": "Delete all workout sessions? Your saved alarms and app settings will remain intact.",
+  "historyClearedToast": "Workout history cleared (alarms & settings preserved)",
+
+  "settingsTitle": "Settings",
+  "settingsSubtitle": "Language, clock format, alarm defaults, and offline AI delegate",
+  "settingsLanguageSection": "Language",
+  "settingsLanguageLabel": "App Language",
+  "settingsLanguageSub": "Updates immediately without restarting and preserves all alarms",
+  "languageArabic": "العربية",
+  "languageEnglish": "English",
+  "settingsClockSection": "Clock & Interface",
+  "settings24HourTitle": "24-Hour Time Format",
+  "settings24HourSub": "Display alarm times in 24h military format",
+  "settingsHapticsTitle": "Haptic Feedback",
+  "settingsHapticsSub": "Subtle tactile feedback on navigation changes",
+  "settingsDefaultsSection": "Alarm & Exercise Defaults",
+  "settingsDefaultExercise": "Default Exercise",
+  "settingsDefaultReps": "Default Target Reps",
+  "settingsAlarmVolume": "Alarm Volume",
+  "settingsAlarmToneLabel": "Alarm Sound Tone",
+  "settingsAlarmToneClassic": "Classic",
+  "settingsAlarmToneChime": "Chime",
+  "settingsAlarmToneRadar": "Radar",
+  "settingsVibrateDefault": "Vibrate by Default",
+  "settingsAiSection": "Offline AI & Native Bridges",
+  "settingsPoseDelegate": "MediaPipe Inference Delegate",
+  "settingsPoseDelegateSub": "Choose hardware acceleration for offline Pose Landmarker",
+  "settingsDelegateGpu": "GPU Delegate",
+  "settingsDelegateCpu": "CPU Fallback",
+  "settingsHostOs": "Host OS",
+  "settingsNativeAlarmBridge": "Native Alarm Bridge",
+  "settingsMediaPipeBridge": "MediaPipe Pose Bridge",
+  "settingsBridgeReady": "Attached (Phase 2 ready)",
+  "settingsBridgeNotAttached": "Not attached",
+  "settingsModelBundled": "Model bundled",
+  "settingsModelPending": "Channel ready (model pending Phase 2)",
+  "settingsInspecting": "Inspecting native bridges...",
+  "settingsBackupSection": "Local Backup & Restore (JSON)",
+  "settingsExportBackupBtn": "Export Backup (JSON)",
+  "settingsImportBackupBtn": "Import & Restore Backup",
+  "settingsBackupExportSuccess": "Backup exported successfully.",
+  "settingsBackupExportCancelled": "Backup export cancelled.",
+  "settingsBackupImportConfirmTitle": "Restore Backup?",
+  "settingsBackupImportConfirmBody": "Replace current local data with backup containing {alarmsCount} alarms and {sessionsCount} workout sessions?",
+  "@settingsBackupImportConfirmBody": {
+    "placeholders": {
+      "alarmsCount": { "type": "int" },
+      "sessionsCount": { "type": "int" }
+    }
+  },
+  "settingsBackupImportSuccess": "Restored {alarmsCount} alarms, {sessionsCount} workout sessions, and settings.",
+  "@settingsBackupImportSuccess": {
+    "placeholders": {
+      "alarmsCount": { "type": "int" },
+      "sessionsCount": { "type": "int" }
+    }
+  },
+  "settingsBackupInvalidError": "Invalid or corrupted backup file. Existing data was not modified.",
+  "settingsStorageSection": "Local Storage",
+  "settingsResetButton": "Reset All Local Data",
+  "settingsResetDialogTitle": "Reset All Local Data?",
+  "settingsResetDialogBody": "This permanently deletes all saved alarms, workout history, and preferences from this device.",
+  "settingsResetToast": "All local alarms and settings cleared",
+  "settingsReplayOnboarding": "View Onboarding & Permissions Guide",
+
+  "notifAlarmChannelName": "PRO Smart Alarms",
+  "notifAlarmChannelDesc": "High-priority fitness alarms requiring exercise completion to dismiss.",
+  "notifAlarmTitle": "PRO Wake-Up Challenge",
+  "notifAlarmBody": "Complete {target} {unit} of {exercise} to dismiss this alarm.",
+  "@notifAlarmBody": {
+    "placeholders": {
+      "target": { "type": "int" },
+      "unit": { "type": "String" },
+      "exercise": { "type": "String" }
+    }
+  },
+
+  "permCameraTitle": "Camera Permission",
+  "permCameraRationale": "Used strictly offline on-device to verify your exercise form before dismissing an alarm.",
+  "permExactAlarmTitle": "Exact Alarm Scheduling",
+  "permExactAlarmRationale": "Required on Android 12+ so your wake-up alarm rings at the exact minute scheduled.",
+  "permNotificationsTitle": "Notifications & Full-Screen Alert",
+  "permNotificationsRationale": "Required to surface the active alarm challenge over the lock screen.",
+  "permGrantButton": "Allow",
+
+  "errDatabaseLoad": "Failed to load local database records.",
+  "errNativeBridge": "Unable to query native platform bridge.",
+  "errCameraUnavailable": "Camera hardware is unavailable on this device.",
+
+  "actionCancel": "Cancel",
+  "actionDelete": "Delete",
+  "actionBack": "Back",
+  "actionConfirm": "Confirm",
+  "actionClose": "Close",
+
+  "a11yToggleAlarm": "Toggle alarm {label}",
+  "@a11yToggleAlarm": {
+    "placeholders": { "label": { "type": "String" } }
+  },
+  "a11yDeleteAlarm": "Delete alarm {label}",
+  "@a11yDeleteAlarm": {
+    "placeholders": { "label": { "type": "String" } }
+  },
+  "a11yOpenSettings": "Open settings",
+  "a11yNavigateBack": "Navigate back",
+  "a11yDeleteSession": "Delete workout session",
+  "a11ySelectWeekday": "Toggle {day}",
+  "@a11ySelectWeekday": {
+    "placeholders": { "day": { "type": "String" } }
+  }
+}

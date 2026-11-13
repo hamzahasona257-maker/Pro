@@ -1,0 +1,6 @@
+{
+  "name": "PRO — Smart Fitness Alarm",
+  "description": "Cross-platform smart fitness alarm foundation with offline MediaPipe Pose Landmarker exercise verification.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
